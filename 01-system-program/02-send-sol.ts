@@ -11,7 +11,7 @@ async function main() {
     const instruction = Web3.SystemProgram.transfer({
         fromPubkey: publicKeyFrom,
         toPubkey: publicKeyTo,
-        lamports: 1000000000,
+        lamports: 1,
     });
     const transaction = new Web3.Transaction();
     transaction.add(instruction);
